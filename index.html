@@ -81,10 +81,12 @@ h1,h2,h3{margin:0;line-height:1.04;letter-spacing:-.02em;font-weight:900}
 .photo__name{position:absolute;left:16px;bottom:16px;right:16px;color:#fff;font-weight:900;font-size:1.25rem;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(0,0,0,.4)}
 .photo__name span{display:block;font-size:.74rem;font-weight:700;letter-spacing:.04em;opacity:.92;text-shadow:0 2px 12px rgba(0,0,0,.5)}
 .steps{display:flex;flex-direction:column;gap:12px}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 18px 40px -30px rgba(44,42,43,.5);transition:transform .2s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 18px 40px -30px rgba(44,42,43,.5);transition:transform .3s ease,background .35s ease,border-color .35s ease,color .35s ease}
 .step:hover{transform:translateY(-3px)}
 .step .lab{font-size:10.5px;letter-spacing:.14em;color:var(--coral);font-weight:800;text-transform:uppercase}
-.step .t{font-size:1.15rem;font-weight:900;letter-spacing:-.02em;margin-top:3px}
+.step .t{font-size:1.2rem;font-weight:900;letter-spacing:-.02em}
+.step.active{background:var(--coral);border-color:var(--coral);transform:translateY(-4px)}
+.step.active .t{color:#fff}
 .step .pip{width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;box-shadow:0 0 0 4px var(--blush2)}
 
 /* proof */
@@ -225,8 +227,7 @@ body{transition:background .3s ease,color .3s ease}
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a class="nav__cta" href="contact.html">Start a project <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a></li>
+      <li><a class="nav__cta" href="contact.html">Hire me <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a></li>
     </ul>
   </nav>
   </div>
@@ -243,34 +244,32 @@ body{transition:background .3s ease,color .3s ease}
         <p class="eyebrow fade">Social media manager &amp; brand strategist</p>
         <h1 class="hero__title fade d1" style="margin-top:1.3rem">Turn quiet brands into the names everyone's <span class="it">talking about.</span></h1>
         <p class="hero__lede fade d2">I help brands turn identity into a language audiences understand, trust, and follow. Strategy and storytelling, from copy that converts to content that connects.</p>
-        <a class="hero__cta fade d3" href="contact.html">Start a project <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        <a class="hero__cta fade d3" href="contact.html">Hire me <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
       </div>
 
       <div class="visual fade d2">
         <figure class="photo" style="margin:0">
           <img src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt="Oreoluwa Oladeinde">
-          <figcaption class="photo__badge"><span class="dot"></span> Working with brands</figcaption>
           <div class="photo__name">Oreoluwa Oladeinde<span>Social media manager &amp; Brand strategist</span></div>
         </figure>
         <div class="steps">
-          <div class="step"><div><div class="lab">Step 01</div><div class="t">Understand</div></div><span class="pip"></span></div>
-          <div class="step"><div><div class="lab">Step 02</div><div class="t">Strategise</div></div><span class="pip"></span></div>
-          <div class="step"><div><div class="lab">Step 03</div><div class="t">Grow</div></div><span class="pip"></span></div>
+          <div class="step"><span class="t">Understand</span></div>
+          <div class="step"><span class="t">Strategise</span></div>
+          <div class="step"><span class="t">Grow</span></div>
         </div>
       </div>
     </div>
 
     <div class="proof reveal">
-      <div><div class="num"><b>37K+</b></div><div class="lab">impressions</div></div>
-      <div><div class="num"><b>6+</b></div><div class="lab">influencer collab</div></div>
-      <div><div class="num"><b>500K+</b></div><div class="lab">in sales</div></div>
+      <div><div class="num"><b data-count="37" data-suffix="K+">37K+</b></div><div class="lab">impressions</div></div>
+      <div><div class="num"><b data-count="6" data-suffix="+">6+</b></div><div class="lab">influencer collab</div></div>
+      <div><div class="num"><b data-count="500" data-suffix="K+">500K+</b></div><div class="lab">in sales</div></div>
     </div>
   </section>
 
   <!-- BIO -->
   <section class="section wrap bio">
     <p class="reveal">I build brands through language, strategy, and storytelling. From copy that converts to content that connects.</p>
-    <a class="link reveal" href="#work">See selected work &rarr;</a>
   </section>
 
   <!-- HOW I HELP -->
@@ -345,7 +344,7 @@ body{transition:background .3s ease,color .3s ease}
   <section class="section wrap cta">
     <span class="blob blob--1" style="left:auto;right:-120px;top:40px"></span>
     <h2 class="reveal">Ready to become the name everyone's <span class="it">talking about?</span></h2>
-    <a class="cta__btn reveal" href="contact.html">Start a project <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+    <a class="cta__btn reveal" href="contact.html">Hire me <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
   </section>
 
 </main>
@@ -373,6 +372,16 @@ body{transition:background .3s ease,color .3s ease}
     document.documentElement.setAttribute('data-theme',next);
     try{localStorage.setItem('oo-theme',next);}catch(e){}
   });
+  function easeOut(t){return 1-Math.pow(1-t,3);}
+  function count(el){var target=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'',dur=1300,start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);el.textContent=Math.round(easeOut(p)*target)+suf;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  var nums=document.querySelectorAll('.proof .num b[data-count]');
+  if(!reduce){
+    nums.forEach(function(n){n.textContent='0'+(n.getAttribute('data-suffix')||'');});
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);cio.unobserve(e.target);}});},{threshold:.5});
+    nums.forEach(function(n){cio.observe(n);});
+    var steps=document.querySelectorAll('.steps .step');
+    if(steps.length){var idx=0;steps[0].classList.add('active');setInterval(function(){steps[idx].classList.remove('active');idx=(idx+1)%steps.length;steps[idx].classList.add('active');},1600);}
+  }
 </script>
 </body>
 </html>
