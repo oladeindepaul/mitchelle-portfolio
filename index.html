@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About, Oreoluwa Oladeinde</title>
-<meta name="description" content="A storyteller who speaks brand fluently. Social media manager, content creator, writer and brand strategist based between Lagos and Ondo State, Nigeria.">
+<title>Hire me, Oreoluwa Oladeinde</title>
+<meta name="description" content="Work with Oreoluwa Oladeinde, social media manager, brand strategist, and writer. Send a message to start a project.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@ a{color:inherit}
 h1,h2,h3{font-family:var(--display);font-weight:900;line-height:1.04;margin:0;letter-spacing:-.025em}
 em{font-style:italic;color:var(--gold)}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
-.section{padding-block:clamp(56px,9vw,110px)}
 .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800;margin:0}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -42,76 +41,37 @@ em{font-style:italic;color:var(--gold)}
 .nav__toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
 .nav__toggle span{width:22px;height:2px;background:var(--ivory);border-radius:2px}
 
-/* intro */
-.intro{padding-block:clamp(48px,8vw,96px) clamp(40px,6vw,70px)}
-.intro__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(28px,5vw,60px);align-items:center}
-.intro__h{font-size:clamp(2.4rem,6vw,4.6rem);letter-spacing:-.03em;margin:1.1rem 0 0;line-height:.99}
-.intro__bio{color:var(--mauve);font-size:clamp(1rem,1.4vw,1.15rem);max-width:44ch;margin:1.5rem 0 0;font-weight:500}
-.intro__photo{margin:0;border-radius:18px;overflow:hidden;background:var(--surface);box-shadow:0 40px 80px -44px rgba(0,0,0,.7)}
-.intro__photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+/* layout */
+.hire{min-height:calc(100vh - 69px);display:flex;align-items:center;padding-block:clamp(48px,8vw,90px)}
+.hire__grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(34px,6vw,80px);align-items:center;width:100%}
+.intro__h{font-size:clamp(2.4rem,5.6vw,4.4rem);letter-spacing:-.03em;margin:1.1rem 0 0;line-height:1}
+.intro__sub{color:var(--mauve);font-size:clamp(1rem,1.4vw,1.18rem);max-width:40ch;margin:1.5rem 0 0;font-weight:500}
 
-/* my story */
-.story .body{max-width:62ch}
-.story .body p{color:#D9C9C6;font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.65;margin:0 0 1.2rem;font-weight:500}
-.story .pull{color:var(--ivory);font-size:clamp(1.5rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.02em;line-height:1.18;margin:2rem 0;padding-left:20px;border-left:3px solid var(--gold);max-width:24ch}
+/* form */
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,34px);box-shadow:0 40px 80px -48px rgba(0,0,0,.8)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:.45rem;margin-bottom:16px}
+.field label{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mauve);font-weight:700}
+.field input,.field textarea{font:inherit;font-size:.98rem;padding:.85em .95em;background:var(--aubergine);border:1.5px solid var(--line);border-radius:10px;color:var(--ivory);width:100%}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.field textarea{resize:vertical;min-height:130px}
+.submit{display:inline-flex;align-items:center;gap:.6em;font:inherit;font-weight:800;font-size:.92rem;letter-spacing:.02em;cursor:pointer;border:none;padding:1em 1.8em;border-radius:10px;background:var(--gold);color:var(--plum);transition:transform .15s}
+.submit:hover{transform:translateY(-2px)}
+.submit[disabled]{opacity:.6;cursor:default;transform:none}
+.f-err{color:#E8927C;font-size:.85rem;font-weight:600;margin:.4rem 0 0;min-height:1em}
 
-/* numbers */
-.nums .h{font-size:clamp(1.8rem,4vw,2.8rem);margin:.7rem 0 26px}
-.row{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,4vw,44px);align-items:start;padding:22px 0;border-top:1px solid var(--line)}
-.row:last-child{border-bottom:1px solid var(--line)}
-.row .num{font-size:clamp(2.4rem,6vw,3.6rem);font-weight:900;letter-spacing:-.03em;color:var(--gold);line-height:.95;white-space:nowrap}
-.row .lab{color:var(--ivory);font-weight:800;font-size:1.05rem;margin:0 0 .4rem}
-.row p.d{color:var(--mauve);font-size:.96rem;line-height:1.55;margin:0;font-weight:500;max-width:48ch}
-@media(max-width:520px){.row{grid-template-columns:1fr;gap:6px}}
-
-/* my stack */
-.stack__hd{display:flex;align-items:center;gap:16px;margin:0 0 4px}
-.stack__hd .ix{font-size:clamp(26px,5vw,40px);font-weight:900;color:#5d4a52}
-.stack__hd .dv{width:1px;height:34px;background:rgba(176,127,134,.4)}
-.stack__hd h2{font-size:clamp(26px,5vw,40px);font-weight:900}
-.stack__sub{color:#8a7e87;font-size:14px;font-weight:600;margin:0 0 26px}
-.orbit-sys{position:relative;width:min(460px,90vw);aspect-ratio:1/1;margin:0 auto}
-.orbit-ring{position:absolute;top:50%;left:50%;width:calc(2 * var(--r));height:calc(2 * var(--r));margin-top:calc(-1 * var(--r));margin-left:calc(-1 * var(--r));border-radius:50%;border:1px dashed rgba(176,127,134,.28);--r:clamp(118px,33vw,168px)}
-.orbit{position:absolute;top:50%;left:50%;width:0;height:0;animation:orbit 38s linear infinite;--r:clamp(118px,33vw,168px)}
-.tool{position:absolute;top:0;left:0;display:flex;flex-direction:column;align-items:center;gap:7px}
-.tool .tile{width:clamp(46px,12vw,62px);height:clamp(46px,12vw,62px);border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 30px -16px rgba(0,0,0,.6);animation:orbit-rev 38s linear infinite}
-.tool .tile img{width:54%;height:54%;object-fit:contain}
-.tool .lab{font-size:12px;font-weight:700;color:var(--mauve);animation:orbit-rev 38s linear infinite}
-.t1{transform:rotate(0deg) translateX(var(--r)) rotate(0deg)}
-.t2{transform:rotate(72deg) translateX(var(--r)) rotate(-72deg)}
-.t3{transform:rotate(144deg) translateX(var(--r)) rotate(-144deg)}
-.t4{transform:rotate(216deg) translateX(var(--r)) rotate(-216deg)}
-.t5{transform:rotate(288deg) translateX(var(--r)) rotate(-288deg)}
-.tool .wrap-i{transform:translate(-50%,-50%)}
-.hub{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:56%;z-index:4}
-.hub h3{font-size:clamp(20px,4.2vw,30px);font-weight:900;letter-spacing:-.02em;line-height:1.02;margin:0 0 12px}
-.pills{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
-.pill{background:rgba(176,127,134,.16);color:var(--ivory);font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:6px 12px;border-radius:99px}
-@keyframes orbit{to{transform:rotate(360deg)}}
-@keyframes orbit-rev{to{transform:rotate(-360deg)}}
-
-/* timeline */
-.exp .h{font-size:clamp(1.7rem,4vw,2.6rem);margin:.7rem 0 28px}
-.tl{position:relative;padding-left:32px}
-.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:rgba(176,127,134,.25)}
-.tl__fill{position:absolute;left:6px;top:6px;width:2px;background:var(--gold);height:calc(var(--p,0) * (100% - 12px));max-height:calc(100% - 12px);transition:height .12s linear}
-.tl__cursor{position:absolute;left:7px;top:calc(6px + var(--p,0) * (100% - 12px));width:15px;height:15px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);box-shadow:0 0 0 5px rgba(201,154,74,.18),0 0 16px rgba(201,154,74,.55);transition:top .12s linear;z-index:3}
-.item{position:relative;padding-bottom:30px}
-.item:last-child{padding-bottom:0}
-.item::before{content:"";position:absolute;left:-31px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--aubergine);border:2px solid var(--mauve);box-shadow:0 0 0 4px var(--aubergine);transition:background .3s,border-color .3s}
-.item.active::before{background:var(--gold);border-color:var(--gold)}
-.item .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
-.item .role{color:var(--ivory);font-size:1.2rem;font-weight:800;letter-spacing:-.01em}
-.item .date{color:var(--gold);font-size:.82rem;font-weight:700;white-space:nowrap}
-.item .org{color:var(--mauve);font-size:.92rem;font-weight:600;margin:.15rem 0 .5rem}
-.item .d{color:#9d8f92;font-size:.9rem;line-height:1.5;margin:0;max-width:60ch}
-.exp__edu{margin-top:42px}
-
-/* cta */
-.cta{text-align:center}
-.cta h2{font-size:clamp(2.1rem,5vw,3.6rem);max-width:20ch;margin:0 auto;letter-spacing:-.03em}
-.cta__btn{display:inline-block;margin-top:2.1rem;font-size:.86rem;letter-spacing:.04em;font-weight:700;text-decoration:none;padding:1.05em 2em;border-radius:4px;background:var(--gold);color:var(--plum);transition:transform .15s}
-.cta__btn:hover{transform:translateY(-2px)}
+/* toast */
+.toast-wrap{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(15,9,16,.6);backdrop-filter:blur(4px);z-index:100}
+.toast-wrap.show{display:flex;animation:fade .3s ease}
+.toast{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:34px 30px;max-width:380px;text-align:center;box-shadow:0 40px 90px -40px rgba(0,0,0,.9);animation:pop .4s cubic-bezier(.2,.9,.3,1.2)}
+.toast .check{width:54px;height:54px;border-radius:50%;background:var(--gold);color:var(--plum);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.toast .check svg{width:26px;height:26px}
+.toast h3{font-size:1.4rem;margin:0 0 .5rem}
+.toast p{color:var(--mauve);font-size:.95rem;margin:0 0 1.4rem;font-weight:500}
+.toast button{font:inherit;font-weight:800;font-size:.85rem;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--ivory);padding:.7em 1.5em;border-radius:99px;transition:.2s}
+.toast button:hover{border-color:var(--gold);color:var(--gold)}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(10px)}to{opacity:1;transform:none}}
 
 /* footer */
 .footer{background:var(--plum);padding:24px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line)}
@@ -124,12 +84,13 @@ em{font-style:italic;color:var(--gold)}
 .footer .ic:hover{border-color:var(--gold);color:var(--gold)}
 .footer .ic svg{width:18px;height:18px}
 
-@media(max-width:860px){.intro__grid{grid-template-columns:1fr}.intro__photo{max-width:420px}}
+@media(max-width:840px){.hire__grid{grid-template-columns:1fr;gap:30px}.hire{min-height:0}}
 @media(max-width:680px){
   .nav__links{position:fixed;inset:62px 0 auto 0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--aubergine);padding:24px var(--gutter);border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .28s;z-index:40}
   .nav__links[data-open=true]{transform:translateY(0)}
   .nav__toggle{display:flex;margin-left:auto}
 }
+@media(max-width:460px){.f-row{grid-template-columns:1fr}}
 @media(max-width:560px){.footer .brand .mark{display:none}.footer__copy{font-size:.7rem}}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
@@ -146,118 +107,62 @@ em{font-style:italic;color:var(--gold)}
   <nav>
     <ul class="nav__links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a class="nav__cta" href="contact.html">Hire me</a></li>
+      <li><a class="nav__cta" href="contact.html" aria-current="page">Hire me</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-
-  <!-- INTRO -->
-  <section class="intro wrap">
-    <div class="intro__grid">
+  <section class="hire wrap">
+    <div class="hire__grid">
       <div>
-        <p class="eyebrow reveal">Who I am</p>
-        <h1 class="intro__h reveal">A storyteller who speaks brand <em>fluently.</em></h1>
-        <p class="intro__bio reveal">I'm Oreoluwa, a social media manager, content creator, writer, and brand strategist working between Lagos and Ondo State, Nigeria. My work lives at the intersection of language, culture, fashion, and commerce.</p>
+        <p class="eyebrow reveal">Hire me</p>
+        <h1 class="intro__h reveal">Let's give your brand a voice people <em>follow.</em></h1>
+        <p class="intro__sub reveal">Tell me a little about your brand and what you're building. I'll get back to you soon.</p>
       </div>
-      <figure class="intro__photo reveal">
-        <img src="https://res.cloudinary.com/dt8eebw4e/image/upload/v1782415147/3e57188f-56fa-4f72-945c-d29472e1f4ba_yxgpcu.jpg" alt="Oreoluwa Oladeinde">
-      </figure>
-    </div>
-  </section>
 
-  <!-- MY STORY -->
-  <section class="section wrap story">
-    <p class="eyebrow reveal">My story</p>
-    <div class="body" style="margin-top:18px">
-      <p class="reveal">With a B.A. in English and Literary Studies and years of hands-on brand managing, I bring both the craft of the writer and the instincts of a strategist to every project.</p>
-      <blockquote class="pull reveal">I don't just execute tasks, I <em>create meaning.</em></blockquote>
-      <p class="reveal">My background in customer care trained me in empathy and communication, learning how people listen, what makes them trust, and what moves them to act.</p>
-      <p class="reveal">My work as a brand strategist and social media manager taught me what it really takes to grow an audience organically, pitch collaborations, position a brand, build trust over time, and drive sales.</p>
-    </div>
-  </section>
-
-  <!-- BY THE NUMBERS -->
-  <section class="section wrap nums">
-    <p class="eyebrow reveal">By the numbers</p>
-    <h2 class="h reveal">Proof, not <em>promises.</em></h2>
-    <div class="row reveal">
-      <div class="num"><b data-count="37" data-suffix="K+">37K+</b></div>
-      <div><p class="lab">Impressions on X</p><p class="d">My content on X has crossed 37,000 impressions. Reach that turned into replies, conversations, and a following that keeps coming back, not just numbers on a screen.</p></div>
-    </div>
-    <div class="row reveal">
-      <div class="num"><b data-count="6" data-suffix="+">6+</b></div>
-      <div><p class="lab">Influencer collaborations</p><p class="d">I've pitched and managed collaborations with more than six creators and influencers, matching the right voices to the right brands and turning partnerships into real momentum.</p></div>
-    </div>
-    <div class="row reveal">
-      <div class="num"><b data-count="500" data-suffix="K+">500K+</b></div>
-      <div><p class="lab">In sales driven</p><p class="d">The strategy and storytelling have driven over 500,000 naira in sales. Proof that the right words don't just look good, they move people to buy.</p></div>
-    </div>
-  </section>
-
-  <!-- MY STACK -->
-  <section class="section wrap stack">
-    <div class="stack__hd reveal"><span class="ix">04</span><span class="dv"></span><h2>MY STACK</h2></div>
-    <p class="stack__sub reveal">5 tools</p>
-    <div class="orbit-sys reveal">
-      <div class="orbit-ring"></div>
-      <div class="orbit">
-        <div class="tool t1"><div class="wrap-i" style="position:absolute;top:0;left:0"><div class="tile" style="background:#010101"><img src="https://cdn.simpleicons.org/tiktok/white" alt="TikTok"></div><span class="lab">TikTok</span></div></div>
-        <div class="tool t2"><div class="wrap-i" style="position:absolute;top:0;left:0"><div class="tile" style="background:#D97757"><img src="https://cdn.simpleicons.org/claude/white" alt="Claude"></div><span class="lab">Claude</span></div></div>
-        <div class="tool t3"><div class="wrap-i" style="position:absolute;top:0;left:0"><div class="tile" style="background:#FFFFFF"><img src="https://cdn.simpleicons.org/gmail" alt="Gmail"></div><span class="lab">Gmail</span></div></div>
-        <div class="tool t4"><div class="wrap-i" style="position:absolute;top:0;left:0"><div class="tile" style="background:#25D366"><img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp"></div><span class="lab">WhatsApp</span></div></div>
-        <div class="tool t5"><div class="wrap-i" style="position:absolute;top:0;left:0"><div class="tile" style="background:#00C4CC"><img src="https://cdn.simpleicons.org/canva/white" alt="Canva"></div><span class="lab">Canva</span></div></div>
-      </div>
-      <div class="hub">
-        <h3>Tools I live in.</h3>
-        <div class="pills"><span class="pill">Write</span><span class="pill">Design</span><span class="pill">Distribute</span></div>
+      <div class="form-card reveal">
+        <form id="hireForm" action="https://formspree.io/f/maqgjjjb" method="POST">
+          <div class="f-row">
+            <div class="field">
+              <label for="fn">First name</label>
+              <input id="fn" name="First name" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="ln">Last name</label>
+              <input id="ln" name="Last name" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="em">Email</label>
+            <input id="em" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="Message" required></textarea>
+          </div>
+          <button class="submit" type="submit">
+            Send message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="f-err" id="formErr" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
-
-  <!-- EXPERIENCE + EDUCATION -->
-  <section class="section wrap exp">
-    <p class="eyebrow reveal">Experience</p>
-    <h2 class="h reveal">Where I've grown.</h2>
-    <div class="tl" data-progress>
-      <div class="tl__fill"></div>
-      <div class="tl__cursor"></div>
-      <div class="item">
-        <div class="top"><span class="role">Social Media Manager</span><span class="date">April 2025 to date</span></div>
-        <p class="org">4tneys</p>
-        <p class="d">Build the content calendar, post and run the community, manage DMs and audience, source partnerships and collaborations, pitch email collaborations, and handle content writing.</p>
-      </div>
-      <div class="item">
-        <div class="top"><span class="role">Front Desk Attendant</span><span class="date">Jan 2022 to Sep 2024</span></div>
-        <p class="org">Startrite Food Ventures</p>
-        <p class="d">Customer service, clerical work, and loan collection. The foundation in empathy, communication, and follow-through that shapes how I work with audiences today.</p>
-      </div>
-    </div>
-
-    <div class="exp__edu">
-      <p class="eyebrow reveal">Education</p>
-      <h2 class="h reveal" style="margin-bottom:22px">The training.</h2>
-      <div class="tl" data-progress>
-        <div class="tl__fill"></div>
-        <div class="tl__cursor"></div>
-        <div class="item">
-          <div class="top"><span class="role">B.A. English and Literary Studies</span><span class="date">2020 to 2025</span></div>
-          <p class="org">Adekunle Ajasin University, Akungba-Akoko</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section wrap cta">
-    <h2 class="reveal">Let's give your brand a voice people <em>follow.</em></h2>
-    <a class="cta__btn reveal" href="contact.html">Hire me</a>
-  </section>
-
 </main>
+
+<!-- confirmation toast -->
+<div class="toast-wrap" id="toast" role="dialog" aria-modal="true" aria-labelledby="toastTitle">
+  <div class="toast">
+    <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+    <h3 id="toastTitle">Message sent</h3>
+    <p>I'll be in touch.</p>
+    <button type="button" id="toastClose">Close</button>
+  </div>
+</div>
 
 <footer class="footer">
   <a class="brand" href="index.html" aria-label="Oreoluwa Oladeinde, home">
@@ -276,37 +181,25 @@ em{font-style:italic;color:var(--gold)}
   var t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
   t.addEventListener('click',function(){var o=l.getAttribute('data-open')==='true';l.setAttribute('data-open',String(!o));t.setAttribute('aria-expanded',String(!o));});
 
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
-  function easeOut(t){return 1-Math.pow(1-t,3);}
-  function count(el){var target=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'',dur=1300,start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);el.textContent=Math.round(easeOut(p)*target)+suf;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
-  var nums=document.querySelectorAll('.num b[data-count]');
-  if(!reduce){
-    nums.forEach(function(n){n.textContent='0'+(n.getAttribute('data-suffix')||'');});
-    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);cio.unobserve(e.target);}});},{threshold:.6});
-    nums.forEach(function(n){cio.observe(n);});
-  }
-
-  // scroll-tracking timeline dot
-  var tls=document.querySelectorAll('.tl[data-progress]');
-  function updTl(){
-    var center=window.innerHeight*0.5;
-    tls.forEach(function(tl){
-      var r=tl.getBoundingClientRect();
-      var p=(center-r.top)/r.height;
-      p=Math.max(0,Math.min(1,p));
-      tl.style.setProperty('--p',p);
-      tl.querySelectorAll('.item').forEach(function(it){
-        var ir=it.getBoundingClientRect();
-        if(ir.top<center+4){it.classList.add('active');}else{it.classList.remove('active');}
-      });
-    });
-  }
-  window.addEventListener('scroll',updTl,{passive:true});
-  window.addEventListener('resize',updTl);
-  updTl();
+  var form=document.getElementById('hireForm'),toast=document.getElementById('toast'),err=document.getElementById('formErr');
+  var btn=form.querySelector('.submit');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    err.textContent='';
+    btn.disabled=true; btn.firstChild.textContent='Sending… ';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){ form.reset(); toast.classList.add('show'); }
+        else{ return r.json().then(function(d){ throw new Error((d.errors&&d.errors[0]&&d.errors[0].message)||'Something went wrong.'); }); }
+      })
+      .catch(function(){ err.textContent='Could not send. Please try again, or email directly.'; })
+      .finally(function(){ btn.disabled=false; btn.firstChild.textContent='Send message '; });
+  });
+  document.getElementById('toastClose').addEventListener('click',function(){toast.classList.remove('show');});
+  toast.addEventListener('click',function(e){if(e.target===toast)toast.classList.remove('show');});
 </script>
 </body>
 </html>
